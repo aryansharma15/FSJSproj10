@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+body::before{    
+    content: "";
+    background: url('http://cdn.home-designing.com/wp-content/uploads/2018/04/black-living-room.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.navbar{
+    height: 12vh;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+
+    width: 90%;
+    overflow: hidden;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    margin-left: 95px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+}
+
+.nav-icon{
+    display: none;
+}
+
+.logo{
+    position: relative;
+    top: 20px;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 25px;
+}
+
+.phone-number{
+    margin: 0px 10px;
+    font-size: 18px;
+    
+}
+
+.phone-number h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr{
+    border-top: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 1040px;
+    position: absolute;
+    right: 70px;
+}
+
+/* 
+    INTRO SECTION!
+*/
+
+.intro-section{
+    margin: 70px 50px;
+    display: flex;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    width: 800px;
+}
+
+.learn-more-btn{
+    padding: 15px 60px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.left-section{
+    position: relative;
+    top: 30px;
+    margin-left: 30px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 530px;
+}
+
+.jigsaw-div::after{
+    content: '';
+    padding: 20px 0px;
+    border: 0.001rem #FFFFFF solid;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 51px;
+    left: 200px;
+
+}
+
+.jigsaw-div::before{
+    content: '';
+    padding: 0.01rem 9px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+    position: relative;
+    top: 175px;
+    left: 192px;
+}
+
+.jigsaw-div{
+    background-color: #ffffff45;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+    align-self: flex-end;
+}
+
+.jigsaw-div img{
+    background-color: #FFFFFF;
+    padding: 4px 25px;
+    border-radius: 40px;
+    margin-left: 0px;
+}
+
+.div1{
+    margin-left: 15px;
+    width: 250px;
+}
+
+.bulb-div{
+    background-color: #ffffff45;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+    position: relative;
+    top: 150px;
+    right: 100px;
+}
+
+.bulb-line{
+    background-color: #FFFFFF;
+    padding: 0.04rem 30px;
+    
+
+    position: relative;
+    left: 189px;
+    top: 67px;
+
+}
+
+.bulb-div::after{
+    content: '';
+    padding: 0.01rem 9px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+    position: relative;
+    left: 336px;
+    bottom: 61px;
+}
+
+.bulb-div img{
+    background-color: #FFFFFF;
+    padding: 4px 25px;
+    border-radius: 40px;
+    margin-left: 15px;
+}
+
+.div2{
+    margin-left: 15px;
+    width: 250px;
+
+}
+
+
+@media screen and (max-width: 720px){
+
+    body{
+        height: 100vh;
+    }
+
+    body::before{
+        height: 1000px;
+    }
+
+    .logo{
+        width: 80px;    
+        position: relative;
+        top: 0px;
+        
+    }
+
+    .navbar{
+        height: 9vh;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .nav-icon{
+        display: block;
+        margin: 0 auto;
+
+        position: relative;
+        left: 160px;
+        font-size: 25px;
+    }
+
+    .right-nav{
+        position: relative;
+        left: 10px;
+    }
+
+    hr{
+        width: 520px;
+        position: relative;
+        left: 50px;
+    }
+
+    .left-section{
+        position: relative;
+        
+        top: 0px;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 50px;
+        width: 500px;
+    }
+
+    .learn-more-btn{
+        font-size: 15px;
+    }
+
+    .jigsaw-div{
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+
+    .bulb-div{
+        position: relative;
+        left: 50px;
+        top: 200px;
+    }
+
+    .bulb-line{
+        position: relative;
+        left: 339px;
+        top: 117px;
+    }
+}
